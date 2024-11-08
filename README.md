@@ -4,12 +4,11 @@ Vintegro é um software web para controle de adegas de vinho.
 
 Feito pelo grupo de PI nº 005 Sala 003 da Univesp.
 
-Carlos Augusto Lemes Silva Braga Landini, 1817922
-Diego Alessandro da Costa, 2220021
-Diogo Paula de Oliveira, 2204614
-Gabriel Leandro dos Santos Lima, 2203921
-Geferson Elias Cerqueira Filho, 2221621
-Icaro Gabriel Pereira Salgado, 2200570
-Ivan Nogueira Simas Junior, 2104458
-Maria Julia de Oliveira, 2217847
-
+Carlos Augusto Lemes Silva Braga Landini, 1817922</br>
+Diego Alessandro da Costa, 2220021</br>
+Diogo Paula de Oliveira, 2204614</br>
+Gabriel Leandro dos Santos Lima, 2203921</br>
+Geferson Elias Cerqueira Filho, 2221621</br>
+Icaro Gabriel Pereira Salgado, 2200570</br>
+Ivan Nogueira Simas Junior, 2104458</br>
+Maria Julia de Oliveira, 2217847</br>
