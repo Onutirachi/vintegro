@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/Montserrat.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="headersection">
+                <a href="home.html"><img class='headerlogo' src="./logo/logonamewhite.svg"></a>
+            </div>
+            <div class="headersection">
+                <div class="headertitle"></div>
+            </div>
+            <div class="headersection">
+                <div class="buttons-container">
+                    <a href="login.html" class="button">LOGIN</a>
+                </div>
+            </div>
+        </div>
+        <div class="center-container">
+            <div class="form-container">
+                <h2>REGISTRE-SE</h2>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input class='textfield' type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input class='textfield' type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">REGISTRAR</button>
+                </form>
+                <div id="message"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

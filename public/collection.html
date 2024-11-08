@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="font/Montserrat.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="headersection">
+                <img class='headerlogo' src="./logo/logonamewhite.svg">
+            </div>
+            <div class="headersection">
+                <div id="collectionTitle" class="headertitle"></div>
+            </div>
+            <div class="headersection">
+                <div class="buttons-container">
+                    <a href="home.html" class="button">SAIR</a>
+                </div>
+            </div>
+        </div>
+        <div id="item-container">
+
+        </div>
+        <div id="item-create">
+            +
+        </div>
+        <div id="back">
+            x
+        </div>
+        <div class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div id="item-show" style="display: none;">
+        <div id="item-show-container">
+            <div id="item-name-show"></div>
+            <div id="item-id-show" style="display: none;"></div>
+            <div class="item-show-container-splitter">
+                <div class="image-group-show">
+                    <img src="" alt="" id="item-image-show">
+                    <img src="" alt="" id="item-imageblur-show">
+                </div>
+                <div id="item-description-show"></div>
+            </div>
+            <div class="item-show-controller">
+                <div class="item-mini">
+                    <img src="./icons/edit.svg" alt="" id="edit-item">
+                    <img src="./icons/trash.svg" alt="" id="delete-item">
+                </div>
+                <div id="item-show-close">X</div>
+            </div>
+        </div>
+    </div>
+    <div id="item-form" style="display: none;">
+        <div class="form-container">
+            <h2>CADASTRAR VINHO</h2>
+            <form id="itemForm">
+                <div class="form-group">
+                    <label for="itemName">Nome do item:</label>
+                    <input class='textfield' type="text" id="itemName" name="itemName" required>
+                </div>
+                <div class="form-group">
+                    <label for="itemDescription">Descrição: </label>
+                    <textarea class='textfield' rows="6" cols="50" class='textfield' type="text" id="itemDescription" name="itemDescription" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="itemImage">Imagem: </label>
+                    <label class="inverted-button" for="itemImage">CARREGAR</label>
+                    <input type="file" id="itemImage" name="itemImage" accept="image/*" />
+                </div>
+                <div class="buttons-container">
+                    <button class="inverted-button" type="submit">CRIAR</button>
+                    <button class="inverted-button" id="itemCancel">CANCELAR</button>
+                </div>
+            </form>
+            <div id="message"></div>
+        </div>
+    </div>
+    <div id="item-edit-form" style="display: none;">
+        <div class="form-container">
+            <h2>EDITAR VINHO</h2>
+            <form id="itemEditForm">
+                <div class="form-group">
+                    <label for="itemEditName">Nome da coleção:</label>
+                    <input class='textfield' type="text" id="itemEditName" name="itemEditName" required>
+                </div>
+                <div class="form-group">
+                    <label for="itemEditDescription">Descrição: </label>
+                    <textarea class='textfield' rows="6" cols="50" id="itemEditDescription" name="itemEditDescription" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="itemEditImage">Imagem: </label>
+                    <label class="inverted-button" for="itemEditImage">Carregar</label>
+                    <input type="file" id="itemEditImage" name="itemEditImage" accept="image/*" />
+                </div>
+                <div class="buttons-container">
+                    <button class="inverted-button" type="submit">EDITAR</button>
+                    <button class="inverted-button" id="itemEditCancel">CANCELAR</button>
+                </div>
+            </form>
+            <div id="editmessage"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

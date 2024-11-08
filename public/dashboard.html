@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="background.css" />
+        <link rel="stylesheet" href="font/Montserrat.css" />
+    </head>
+
+    <body>
+        <div class="main-container">
+            <div class="header">
+                <div class="headersection">
+                    <img class="headerlogo" src="./logo/logonamewhite.svg" />
+                </div>
+                <div class="headersection">
+                    <div class="headertitle">Minhas Adegas</div>
+                </div>
+                <div class="headersection">
+                    <div class="buttons-container">
+                        <a href="home.html" class="button">SAIR</a>
+                    </div>
+                </div>
+            </div>
+            <div id="collection-container"></div>
+            <div id="collection-create">+</div>
+            <div class="area">
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div id="collection-form" style="display: none">
+            <div class="form-container">
+                <h2>CRIAR ADEGA</h2>
+                <form id="collectionForm">
+                    <div class="form-group">
+                        <label for="collectionName">Nome da adega:</label>
+                        <input class="textfield" type="text" id="collectionName" name="collectionName" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="collectionDescription">Descrição: </label>
+                        <textarea class="textfield" rows="6" cols="50" id="collectionDescription" name="collectionDescription" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="collectionImage">Imagem: </label>
+                        <label class="inverted-button" for="collectionImage">CARREGAR</label>
+                        <input type="file" id="collectionImage" name="collectionImage" accept="image/*" />
+                    </div>
+                    <div class="buttons-container">
+                        <button class="inverted-button" type="submit">CRIAR</button>
+                        <button class="inverted-button" id="collectionCancel">CANCELAR</button>
+                    </div>
+                </form>
+                <div id="message"></div>
+            </div>
+        </div>
+        <div id="collection-edit-form" style="display: none">
+            <div class="form-container">
+                <h2>EDITAR ADEGA</h2>
+                <form id="collectionEditForm">
+                    <div class="form-group">
+                        <label for="collectionEditName">Nome da adega:</label>
+                        <input class="textfield" type="text" id="collectionEditName" name="collectionEditName" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="collectionEditDescription">Descrição: </label>
+                        <textarea class="textfield" rows="6" cols="50" id="collectionEditDescription" name="collectionEditDescription" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="collectionEditImage">Imagem: </label>
+                        <label class="inverted-button" for="collectionEditImage">Carregar</label>
+                        <input type="file" id="collectionEditImage" name="collectionEditImage" accept="image/*" />
+                    </div>
+                    <div class="buttons-container">
+                        <button class="inverted-button" type="submit">EDITAR</button>
+                        <button class="inverted-button" id="collectionEditCancel">CANCELAR</button>
+                    </div>
+                </form>
+                <div id="editmessage"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
